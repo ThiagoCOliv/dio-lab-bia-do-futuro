@@ -1,5 +1,5 @@
 data,descricao,categoria,valor,tipo
-2025-10-01,Salário,receita,5000.00,entrada
+2025-10-01,Salário,receita,4200.00,entrada
 2025-10-02,Aluguel,moradia,1200.00,saida
 2025-10-03,Supermercado,alimentacao,450.00,saida
 2025-10-05,Netflix,lazer,55.90,saida
@@ -9,7 +9,7 @@ data,descricao,categoria,valor,tipo
 2025-10-15,Conta de Luz,moradia,180.00,saida
 2025-10-20,Academia,saude,99.00,saida
 2025-10-25,Combustível,transporte,250.00,saida
-2025-11-01,Salário,receita,5000.00,entrada
+2025-11-01,Salário,receita,4200.00,entrada
 2025-11-02,Aluguel,moradia,1200.00,saida
 2025-11-03,Supermercado,alimentacao,470.00,saida
 2025-11-05,Netflix,lazer,55.90,saida
@@ -20,7 +20,7 @@ data,descricao,categoria,valor,tipo
 2025-11-18,Internet,moradia,120.00,saida
 2025-11-20,Academia,saude,99.00,saida
 2025-11-25,Combustível,transporte,260.00,saida
-2025-12-01,Salário,receita,5000.00,entrada
+2025-12-01,Salário,receita,4200.00,entrada
 2025-12-02,Aluguel,moradia,1200.00,saida
 2025-12-03,Supermercado,alimentacao,520.00,saida
 2025-12-05,Netflix,lazer,55.90,saida
@@ -31,7 +31,7 @@ data,descricao,categoria,valor,tipo
 2025-12-18,Presente de Natal,lazer,400.00,saida
 2025-12-20,Academia,saude,99.00,saida
 2025-12-24,Ceia de Natal,alimentacao,350.00,saida
-2026-01-01,Salário,receita,5000.00,entrada
+2026-01-01,Salário,receita,4200.00,entrada
 2026-01-02,Aluguel,moradia,1200.00,saida
 2026-01-03,Supermercado,alimentacao,480.00,saida
 2026-01-05,Netflix,lazer,55.90,saida
