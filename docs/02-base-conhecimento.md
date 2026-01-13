@@ -2,8 +2,6 @@
 
 ## Dados Utilizados
 
-Descreva se usou os arquivos da pasta `data`, por exemplo:
-
 | Arquivo | Formato | Utilização no Agente |
 |---------|---------|---------------------|
 | `historico_atendimento.csv` | CSV | Contextualizar interações anteriores |
@@ -11,16 +9,13 @@ Descreva se usou os arquivos da pasta `data`, por exemplo:
 | `produtos_financeiros.json` | JSON | Sugerir produtos adequados ao perfil |
 | `transacoes.csv` | CSV | Analisar padrão de gastos do cliente |
 
-> [!TIP]
-> **Quer um dataset mais robusto?** Você pode utilizar datasets públicos do [Hugging Face](https://huggingface.co/datasets) relacionados a finanças, desde que sejam adequados ao contexto do desafio.
-
 ---
 
 ## Adaptações nos Dados
 
 > Você modificou ou expandiu os dados mockados? Descreva aqui.
 
-[Sua descrição aqui]
+Os dados mockados foram alterados e expandidos para enriquecer os cenários de teste do agente. As novas informações, incluindo transações, atendimentos e produtos financeiros, foram geradas por Inteligência Artificial exclusivamente para fins de teste e validação, podendo não representar a realidade de forma totalmente fiel ou refletir com precisão comportamentos e cenários financeiros reais.
 
 ---
 
@@ -29,12 +24,12 @@ Descreva se usou os arquivos da pasta `data`, por exemplo:
 ### Como os dados são carregados?
 > Descreva como seu agente acessa a base de conhecimento.
 
-[ex: Os JSON/CSV são carregados no início da sessão e incluídos no contexto do prompt]
+Os arquivos JSON/CSV são carregados em um código python e incluídos no contexto do prompt.
 
 ### Como os dados são usados no prompt?
 > Os dados vão no system prompt? São consultados dinamicamente?
 
-[Sua descrição aqui]
+Os dados contidos nos arquivos são armazenados em variáveis no código em Python e inseridos diretamente no prompt no momento da execução do agente. Essas variáveis fornecem o contexto necessário para simular cenários financeiros, realizar análises, gerar projeções e produzir recomendações alinhadas às informações disponíveis. O system prompt permanece responsável por definir o comportamento, o tom de comunicação e as limitações do agente, enquanto os dados passados via prompt servem como base para o raciocínio do modelo.
 
 ---
 
@@ -44,12 +39,12 @@ Descreva se usou os arquivos da pasta `data`, por exemplo:
 
 ```
 Dados do Cliente:
-- Nome: João Silva
-- Perfil: Moderado
-- Saldo disponível: R$ 5.000
+- Nome: Carlos Mendes
+- Perfil: conservador
+- Saldo disponível: R$ 4.784,30
 
 Últimas transações:
-- 01/11: Supermercado - R$ 450
-- 03/11: Streaming - R$ 55
+- 12/01: Conta de Água - R$ 90
+- 10/01: Uber - R$ 40
 ...
 ```
