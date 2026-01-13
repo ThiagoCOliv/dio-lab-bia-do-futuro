@@ -15,7 +15,9 @@
 
 > Você modificou ou expandiu os dados mockados? Descreva aqui.
 
-Os dados mockados foram alterados e expandidos para enriquecer os cenários de teste do agente. As novas informações, incluindo transações, atendimentos e produtos financeiros, foram geradas por Inteligência Artificial exclusivamente para fins de teste e validação, podendo não representar a realidade de forma totalmente fiel ou refletir com precisão comportamentos e cenários financeiros reais.
+Os dados mockados foram alterados e expandidos para enriquecer os cenários de teste do agente.
+
+> ⚠️ As novas informações, incluindo transações, atendimentos e produtos financeiros, foram geradas por Inteligência Artificial exclusivamente para fins de teste e validação, podendo não representar a realidade de forma totalmente fiel ou refletir com precisão comportamentos e cenários financeiros reais.
 
 ---
 
