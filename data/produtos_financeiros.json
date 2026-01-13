@@ -38,5 +38,45 @@
     "rentabilidade": "Variável",
     "aporte_minimo": 100.00,
     "indicado_para": "Perfil arrojado com foco no longo prazo"
+  },
+  {
+    "nome": "Tesouro IPCA+",
+    "categoria": "renda_fixa",
+    "risco": "medio",
+    "rentabilidade": "IPCA + taxa prefixada",
+    "aporte_minimo": 30.00,
+    "indicado_para": "Proteção contra a inflação no médio e longo prazo"
+  },
+  {
+    "nome": "CDB Prefixado",
+    "categoria": "renda_fixa",
+    "risco": "baixo",
+    "rentabilidade": "Taxa fixa anual",
+    "aporte_minimo": 500.00,
+    "indicado_para": "Quem busca previsibilidade de retorno"
+  },
+  {
+    "nome": "Debêntures Incentivadas",
+    "categoria": "renda_fixa",
+    "risco": "medio",
+    "rentabilidade": "IPCA + prêmio",
+    "aporte_minimo": 1000.00,
+    "indicado_para": "Investidores que buscam isenção de IR e maior retorno"
+  },
+  {
+    "nome": "ETF de Ibovespa",
+    "categoria": "renda_variavel",
+    "risco": "alto",
+    "rentabilidade": "Variável (mercado)",
+    "aporte_minimo": 100.00,
+    "indicado_para": "Exposição diversificada à bolsa brasileira"
+  },
+  {
+    "nome": "Fundo Imobiliário (FII)",
+    "categoria": "renda_variavel",
+    "risco": "medio",
+    "rentabilidade": "Dividendos + valorização",
+    "aporte_minimo": 100.00,
+    "indicado_para": "Geração de renda mensal no médio e longo prazo"
   }
 ]
