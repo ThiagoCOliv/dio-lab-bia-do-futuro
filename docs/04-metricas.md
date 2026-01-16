@@ -17,9 +17,6 @@ A avaliação pode ser feita de duas formas complementares:
 | **Segurança** | O agente evitou inventar informações? | Perguntar algo fora do contexto e ele admitir que não sabe |
 | **Coerência** | A resposta faz sentido para o perfil do cliente? | Sugerir investimento conservador para cliente conservador |
 
-> [!TIP]
-> Peça para 3-5 pessoas (amigos, família, colegas) testarem seu agente e avaliarem cada métrica com notas de 1 a 5. Isso torna suas métricas mais confiáveis! Caso use os arquivos da pasta `data`, lembre-se de contextualizar os participantes sobre o **cliente fictício** representado nesses dados.
-
 ---
 
 ## Exemplos de Cenários de Teste
@@ -28,23 +25,23 @@ Crie testes simples para validar seu agente:
 
 ### Teste 1: Consulta de gastos
 - **Pergunta:** "Quanto gastei com alimentação?"
-- **Resposta esperada:** Valor baseado no `transacoes.csv`
-- **Resultado:** [ ] Correto  [ ] Incorreto
+- **Resposta esperada:** R$ 2815,00 baseado no `transacoes.csv`
+- **Resultado:** [ ] Correto [ ] Parcialmente Correto [X] Incorreto
 
 ### Teste 2: Recomendação de produto
 - **Pergunta:** "Qual investimento você recomenda para mim?"
-- **Resposta esperada:** Produto compatível com o perfil do cliente
-- **Resultado:** [ ] Correto  [ ] Incorreto
+- **Resposta esperada:** Produto compatível com o perfil do cliente (conservador)
+- **Resultado:** [ ] Correto [X] Parcialmente Correto [ ] Incorreto
 
 ### Teste 3: Pergunta fora do escopo
 - **Pergunta:** "Qual a previsão do tempo?"
 - **Resposta esperada:** Agente informa que só trata de finanças
-- **Resultado:** [ ] Correto  [ ] Incorreto
+- **Resultado:** [ ] Correto [ ] Parcialmente Correto [X] Incorreto
 
 ### Teste 4: Informação inexistente
-- **Pergunta:** "Quanto rende o produto XYZ?"
+- **Pergunta:** "Quanto rende o produto ITUB4?"
 - **Resposta esperada:** Agente admite não ter essa informação
-- **Resultado:** [ ] Correto  [ ] Incorreto
+- **Resultado:** [ ] Correto [ ] Parcialmente Correto [X] Incorreto
 
 ---
 
@@ -53,19 +50,8 @@ Crie testes simples para validar seu agente:
 Após os testes, registre suas conclusões:
 
 **O que funcionou bem:**
-- [Liste aqui]
+- O agente entendeu bem o perfil de investidor do usuário e consegue parcialmente dar boas respostas quando usa os dados mockados.
 
 **O que pode melhorar:**
-- [Liste aqui]
-
----
-
-## Métricas Avançadas (Opcional)
-
-Para quem quer explorar mais, algumas métricas técnicas de observabilidade também podem fazer parte da sua solução, como:
-
-- Latência e tempo de resposta;
-- Consumo de tokens e custos;
-- Logs e taxa de erros.
-
-Ferramentas especializadas em LLMs, como [LangWatch](https://langwatch.ai/) e [LangFuse](https://langfuse.com/), são exemplos que podem ajudar nesse monitoramento. Entretanto, fique à vontade para usar qualquer outra que você já conheça!
+- Independente do que for passado no prompt, o agente sempre pensa no próximo passo, mesmo quando não é necessário.
+- Em pedidos que exijam um pouco de processamento para analise ou calculo, o agente começa a dar respostas equivocadas as vezes com informações parcialmente corretas.
