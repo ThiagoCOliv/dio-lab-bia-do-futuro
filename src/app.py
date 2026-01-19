@@ -6,10 +6,10 @@ import streamlit as st
 OLLAMA_URL = "http://localhost:11434/api/generate"
 MODELO = "gemma3:4b"
 
-perfil = json.load(open('./data/perfil_investidor.json'))
-transacoes = pd.read_csv('./data/transacoes.csv')
-historico = pd.read_csv('./data/historico_atendimento.csv')
-produtos = json.load(open('./data/produtos_financeiros.json'))
+perfil = json.load(open('../data/perfil_investidor.json'))
+transacoes = pd.read_csv('../data/transacoes.csv')
+historico = pd.read_csv('../data/historico_atendimento.csv')
+produtos = json.load(open('../data/produtos_financeiros.json'))
 
 contexto = f"""
 CLIENTE: {perfil['nome']}, {perfil['idade']} anos, perfil de investidor {perfil['perfil_investidor']}
